@@ -32,7 +32,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
+        if( a == null || b == null){
         return null; // Replace null with the variable you used to store the result
+    }
+        return a + b;
+        
+        
     }
 
     /**
@@ -44,7 +49,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        if( a == null || b == null){
+        return null;}
+        
+        return a-b;// Replace null with the variable you used to store the result
     }
 
     /**
@@ -56,7 +64,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        if( a == null || b == null){
+        return null;}
+        
+        return a * b; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -69,7 +80,13 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Double division(Double a, Double b) {
-        return null; // Replace null with the variable you used to store the result
+        if( a == null || b == null){
+        return null;} // Replace null with the variable you used to store the result
+        
+        if( b == 0){
+            return 0;
+        }
+        return a / b;
     }
 
     /**
@@ -83,7 +100,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if( num == null){
+        return null;} // Replace null with the variable you used to store the result
+        
+        return Math.mod(num,2);
     }
 
     /**
@@ -94,7 +114,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if( num == null){
+        return null;}
+        
+        return  num > 0; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -106,7 +129,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        if( str1 == null || str2 == null){
+        return null;}
+        
+        return str1 + ' '+ str2; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -147,7 +173,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        if(dt == null){
+        return null;} // Replace null with the variable you used to store the result
+    
+        return dt >= Date.today();
+    
+    
     }
 
     /**
