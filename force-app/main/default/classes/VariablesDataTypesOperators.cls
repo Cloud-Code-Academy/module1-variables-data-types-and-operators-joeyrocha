@@ -132,7 +132,7 @@ public with sharing class VariablesDataTypesOperators {
         if( str1 == null || str2 == null){
         return null;}
         
-        return str1 + ' '+ str2; // Replace null with the variable you used to store the result
+        return str1 + str2; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -150,7 +150,7 @@ public with sharing class VariablesDataTypesOperators {
 		if (noun == null || verb == null || endingPunctuation == null) {
         return null;}
         
-        return 'The' + noun + 'is' + verb + endingPunctuation; // Replace null with the variable you used to store the result
+        return 'The ' + noun + ' is ' + verb + endingPunctuation; // Replace null with the variable you used to store the result
 	}
 
     /**
