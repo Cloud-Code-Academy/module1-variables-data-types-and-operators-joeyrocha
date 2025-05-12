@@ -147,7 +147,10 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+		if (noun == null || verb == null || endingPunctuation == null) {
+        return null;}
+        
+        return 'The' + noun + 'is' + verb + endingPunctuation; // Replace null with the variable you used to store the result
 	}
 
     /**
@@ -160,7 +163,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        if (dt == null) {
+        return null;}
+        return dt < Date.today(); // Replace null with the variable you used to store the result
     }
 
     /**
