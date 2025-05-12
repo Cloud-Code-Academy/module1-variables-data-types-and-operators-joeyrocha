@@ -317,7 +317,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPay = hourlyRate * Decimal.valueOf(numberOfHours); // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        return calculateWeeklypayCheck; // Replace null with the variable you used to store the result
+        return weeklyPay; // Replace null with the variable you used to store the result
     }
 
     /**
