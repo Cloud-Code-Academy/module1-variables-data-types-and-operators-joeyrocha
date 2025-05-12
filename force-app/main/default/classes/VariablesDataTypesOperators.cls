@@ -103,7 +103,7 @@ public with sharing class VariablesDataTypesOperators {
         if( num == null){
         return null;} // Replace null with the variable you used to store the result
         
-        return Math.mod(num,2);
+        return Math.mod(num,2) == 0;
     }
 
     /**
@@ -281,7 +281,7 @@ public with sharing class VariablesDataTypesOperators {
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
         
-        celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
+        Double celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
 
         return celsius; // Replace null with the variable you used to store the result
     }
@@ -302,7 +302,7 @@ public with sharing class VariablesDataTypesOperators {
         Double divisionResult = a / b;
 
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = Integer(divisionResult);
+        Integer roundedResult = (Integer)divisionResult;
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
@@ -317,7 +317,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPay = hourlyRate * Decimal.valueOf(numberOfHours); // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        return calculateMonthlyPaycheck; // Replace null with the variable you used to store the result
+        return calculateWeeklypayCheck; // Replace null with the variable you used to store the result
     }
 
     /**
