@@ -258,7 +258,7 @@ public with sharing class VariablesDataTypesOperators {
      * In this case, parentheses are added to the expression (a * b - c) / d + e to ensure that 
      * multiplication and subtraction are performed before division, which in turn is performed 
      * before addition.
-     * Example: adjustOrderOfOperations3(1, 2, 3, 4, 5) should return 4.5
+     * Example: adjustOrderOfOperations3(1, 2, 3, 4, 5) should return 4.75
      * @param a The first number.
      * @param b The second number.
      * @param c The third number.
